@@ -1,0 +1,23 @@
+[user]
+	name = Jasper Chang
+	email = jasperchang@kkbox.com
+[color]
+	ui = auto
+	branch = auto
+	status = auto
+	diff = auto
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+	fh = fetch
+	sh = stash
+[core]
+	excludesfile = /Users/jasperchang/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
