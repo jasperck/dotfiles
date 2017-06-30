@@ -6,7 +6,7 @@ export DOTFILES=$HOME/.dotfiles
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="afowler"
+ZSH_THEME="hyperzsh"
 
 plugins=(git node npm history-substring-search)
 
@@ -40,10 +40,9 @@ export PAGER='less'
 # For a full list of active aliases, run `alias`.
 
 # NVM
-export NVM_DIR="/Users/jasperchang/.nvm"
-# export NVM_DIR="/net/account/users/jasperchang/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-# source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=$HOME/.nvm
+[[ -s "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source $(brew --prefix nvm)/nvm.sh
 
 export CLICOLOR=1
 export LSCOLORS="exfxcxdxbxegedabagacad"
@@ -61,4 +60,3 @@ export LS_COLORS='di=94;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43
 
 BASE16_SHELL="$DOTFILES/.config/base16-shell/base16-monokai.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-# source $BASE16_SHELL
