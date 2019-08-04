@@ -16,7 +16,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 # Fix git log mojibake
-export TZ="Asia/Taipei"
+# export TZ="Asia/Taipei"
+export TZ="Europe/London"
 export LC_ALL="zh_TW.UTF-8"
 export LANG="zh_TW.UTF-8"
 export LESSCHARSET="utf-8"
